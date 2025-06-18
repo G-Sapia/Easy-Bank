@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Bank - Receitas e Despesas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Desktop/Tablet -->
+    <nav class="navbar navbar-expand-lg d-none d-md-flex">
+        <div class="container-fluid justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn rounded-circle">
+                    <!-- SVG Menu -->
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <span class="text-white fw-semibold fs-5">Easy Bank</span>
+            </div>
+
+            <div class="d-flex gap-4">
+                <!-- SVG Search -->
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" style="cursor:pointer;">
+                    <circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="2"/>
+                    <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+                <!-- SVG Notification -->
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" style="cursor:pointer;">
+                    <path d="M12 2a6 6 0 0 1 6 6v4.5l1.707 1.707a1 1 0 0 1-.707 1.707H5a1 1 0 0 1-.707-1.707L6 12.5V8a6 6 0 0 1 6-6Z" stroke="#fff" stroke-width="2"/>
+                    <path d="M9 20a3 3 0 0 0 6 0" stroke="#fff" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Topo Mobile -->
+    <div class="topo-mobile d-flex d-md-none align-items-center justify-content-between px-3 py-2">
+        <div class="d-flex align-items-center gap-2">
+            <div class="perfil-mobile d-flex align-items-center justify-content-center">
+                GS
+            </div>
+            <div class="fw-semibold">Olá, Gabriel</div>
+        </div>
+        <div class="d-flex gap-3">
+            <!-- SVG Search -->
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" style="cursor:pointer;">
+                <circle cx="11" cy="11" r="7" stroke="#000" stroke-width="2"/>
+                <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <!-- SVG Notification -->
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" style="cursor:pointer;">
+                <path d="M12 2a6 6 0 0 1 6 6v4.5l1.707 1.707a1 1 0 0 1-.707 1.707H5a1 1 0 0 1-.707-1.707L6 12.5V8a6 6 0 0 1 6-6Z" stroke="#000" stroke-width="2"/>
+                <path d="M9 20a3 3 0 0 0 6 0" stroke="#000" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Desktop/Tablet -->
+    <div class="breadcrumb-area d-none d-md-block px-4 py-2">
+        <a href="#" class="text-decoration-none text-primary">Página inicial</a>
+        <span class="fw-semibold">/ Receitas e despesas</span>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold mb-0">Movimentações</h4>
+            <div class="d-flex gap-3">
+                <!-- Ícone Plus -->
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor:pointer;">
+                    <path d="M12 5v14M5 12h14" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Ícone Download -->
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor:pointer;">
+                    <path d="M12 5v9m0 0l-4-4m4 4l4-4M5 19h14" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <!-- Ícone Search -->
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor:pointer;">
+                    <circle cx="11" cy="11" r="7" stroke="#000" stroke-width="2"/>
+                    <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Ícone Sliders -->
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor:pointer;">
+                    <path d="M4 21v-7m0-4V3M12 21v-10m0-4V3M20 21v-4m0-4V3" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="mov-card">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div class="mov-title">20 de abril de 2025</div>
+                    <div>Outras receitas</div>
+                    <div class="fw-semibold">Pix leonardo</div>
+                </div>
+                <div class="valor-receita">R$ 30,00</div>
+            </div>
+        </div>
+
+        <div class="mov-card">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div class="mov-title">03 de abril de 2025</div>
+                    <div>Academia</div>
+                    <div class="fw-semibold">Pix growth supp</div>
+                </div>
+                <div class="valor-despesa">- R$ 298,93</div>
+            </div>
+        </div>
+
+        <div class="mov-card">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div class="mov-title">31 de março de 2025</div>
+                    <div>Salário</div>
+                    <div class="fw-semibold">Pagamento</div>
+                </div>
+                <div class="valor-receita">R$ 12.500,00</div>
+            </div>
+        </div>
+
+        <div class="mov-card">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div class="mov-title">03 de março de 2025</div>
+                    <div>Pagamento de fatura</div>
+                    <div class="fw-semibold">Banco X</div>
+                </div>
+                <div class="valor-despesa">- R$ 3.626,45</div>
+            </div>
+        </div>
+    </div>
+
+    <!--> Menu Inferior Mobile -->
+    <nav class="bottom-menu fixed-bottom d-md-none">
+        <div class="d-flex justify-content-around py-2">
+            <a href="#" class="nav-link text-center">
+                <!-- Receitas e Despesas (Ativo) -->
+                <img src="icons/receitas.svg" width="24" alt=""><br>Receitas
+            </a>
+            <a href="#" class="nav-link text-center">
+                <!-- Dívidas (Inativo) -->
+                <img src="icons/dividas.svg" width="24" alt=""><br>Dívidas
+            </a>
+            <a href="#" class="nav-link text-center">
+                <!-- Investimentos (Inativo) -->
+                <img src="icons/investimentos.svg" width="24" alt=""><br>Invest.
+            </a>
+            <a href="#" class="nav-link text-center">
+                <!-- Orçamento (Inativo) -->
+                <img src="icons/orcamento.svg" width="24" alt=""><br>Orçamento
+            </a>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
